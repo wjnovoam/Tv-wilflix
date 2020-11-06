@@ -9,7 +9,7 @@ export default function search() {
 	if ($inputText.value === '') {
 		shows();
 	} else {
-		let url = `http://api.tvmaze.com/search/shows?q=${$inputText.value}`;
+		let url = `https://api.tvmaze.com/search/shows?q=${$inputText.value}`;
 		getData({url, metho: displayShowsSearch}, $inputText.value);
 		// textBuscador = inputText.value;
 		$inputText.value = '';
