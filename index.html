@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV wilflix </title>
+  <link rel="stylesheet" href="src/css/normalize.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="content-header">
+      <div class="content-logo">
+        <img src="./src/img/logo.png" alt="">
+        <h1>TVwilflix</h1>
+      </div>
+      <div class="content-header-right">
+        <div class="search">
+          <input id="text-show" type="text" placeholder="...Search">
+          <button class="icon btn-search"><i class="fa fa-search" style="color: #000000;"></i></button>
+        </div>
+        <div class="content-user">
+          <img class="img-user-perfil" alt="">
+        </div>
+      </div>
+    </div>
+    <nav class="menu">
+      <div class="content-menu">
+        <a id="inicio" href="src/html/inicio.html">Inicio</a>
+        <a id="shows" href="src/html/shows.html">Shows</a>
+        <a id="shows-hoy" href="src/html/shows.html">Shows hoy</a>
+        <a id="favorites" href="src/html/shows.html">Favoritos</a>
+        <a id="views" href="src/html/shows.html">Vistos</a>
+      </div>
+    </nav>
+    <button class="btn-hamburguesa">
+      <i class="fa fa-bars"></i>
+    </button>
+  </header>
+  <!-- Contenido del modal del usuario -->
+  <div id="modal" class="new-users">
+    <div class="content-modal-user">
+      <h1>Hola!!!</h1>
+      <div class="content-users">
+        <h2>¿Cómo te llamas?</h2>
+        <input id="user" type="text" name="user" placeholder="NOMBRE" required>
+        <img class="img-user" src="https://avatars.dicebear.com/api/avataaars/willa.svg" alt="">
+        <button class="guardar">Continue <i class="fa fa-fast-forward"></i></button>
+      </div>
+    </div>
+  </div>
+  <main>
+
+  </main>
+  <footer>
+    <div class="copyright">
+      <h2>WJNM</h2>
+      <p>© Copyright 2020, William Johan Novoa Melendrez.</p>
+    </div>
+    <div class="redes-sociales">
+      <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+      <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+      <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <template id="template-show">
+    <div class="show" data-id="">
+      <div class="show-cover"></div>
+      <div class="show-info">
+        <div class="name-pelicula"></div>
+        <div class="show-mas-info">
+          <div class="info-estrella">
+            <span class="estrellas">
+            </span>
+            <span class="puntaje"></span>
+          </div>
+          <div class="info-person">
+            <span class="vista">
+              <i class="fa fa-eye-slash"></i>
+            </span>
+            <span class="favorite">
+              <i class="fa fa-heart"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="template-show-hoy">
+    <div class="show" data-id="">
+      <div class="show-cover"></div>
+      <div class="show-info">
+        <div class="name-pelicula"></div>
+        <div class="show-mas-info">
+          <div class="airdate"></div>
+          <div class="airtime"></div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="template-show-favorite">
+    <div class="show" data-id="">
+      <div class="show-cover"></div>
+      <div class="show-info">
+        <div class="name-pelicula"></div>
+        <div class="show-mas-info">
+          <div class="info-estrella">
+            <span class="estrellas">
+            </span>
+            <span class="puntaje"></span>
+          </div>
+          <div class="info-person">
+            <span class="vista" style="visibility: hidden;">
+              <i class="fa fa-eye-slash"></i>
+            </span>
+            <span class="favorite">
+              <i class="fa fa-heart"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="template-show-watches">
+    <div class="show" data-id="">
+      <div class="show-cover"></div>
+      <div class="show-info">
+        <div class="name-pelicula"></div>
+        <div class="show-mas-info">
+          <div class="info-estrella">
+            <span class="estrellas">
+            </span>
+            <span class="puntaje"></span>
+          </div>
+          <div class="info-person">
+            <span class="favorite" style="visibility: hidden;">
+              <i class="fa fa-heart"></i>
+            </span>
+            <span class="vista">
+              <i class="fa fa-eye-slash"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <script src="./src/js/index.js" type="module"></script>
+</body>
+
+</html>
