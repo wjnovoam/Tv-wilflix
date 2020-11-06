@@ -141,8 +141,10 @@ export function displayShows(res) {
 		$fragmentShow.appendChild($clone);
 	});
 
-	$main.removeChild($main.children[1]);
-	document.querySelector('.shows').appendChild($fragmentShow);
+		setTimeout(() => {
+		$main.removeChild($main.children[1]);
+		document.querySelector('.shows').appendChild($fragmentShow);
+		}, 3000);
 }
 
 // prettier-ignore
@@ -161,8 +163,10 @@ function displayShowsHoy(res) {
 		$fragmentShow.appendChild($clone);
   });
   
-  $main.removeChild($main.children[1]);
-	document.querySelector('.shows').appendChild($fragmentShow);
+  	setTimeout(() => {
+		$main.removeChild($main.children[1]);
+		document.querySelector('.shows').appendChild($fragmentShow);
+	}, 3000);
 			
 }
 
@@ -203,8 +207,10 @@ export function displayShowsSearch(res) {
 		$fragmentShow.appendChild($clone);
 	});
 
-	$main.removeChild($main.children[1]);
-	document.querySelector('.shows').appendChild($fragmentShow);
+		setTimeout(() => {
+		$main.removeChild($main.children[1]);
+		document.querySelector('.shows').appendChild($fragmentShow);
+		}, 3000);
 }
 
 function rating(valor) {
