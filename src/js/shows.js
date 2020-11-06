@@ -49,7 +49,7 @@ export function search() {
 		shows();
 	} else {
 		$main.appendChild($divImgLoader);
-		let url = `http://api.tvmaze.com/search/shows?q=${$inputText.value}`;
+		let url = `https://api.tvmaze.com/search/shows?q=${$inputText.value}`;
 		getData({url, metho: displayShowsSearch}, $inputText.value);
 		$inputText.value = '';
 	}
