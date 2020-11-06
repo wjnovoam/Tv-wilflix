@@ -8,12 +8,12 @@ const fechaHoy = `${date.getFullYear()}-${date.getMonth() + 1}-${
 }`;
 
 export async function shows() {
-	let url = 'http://api.tvmaze.com/shows';
+	let url = 'https://api.tvmaze.com/shows';
 	await getData({url, metho: displayShows});
 }
 
 export async function showsHoy() {
-	let url = `http://api.tvmaze.com/schedule?date=${fechaHoy}`;
+	let url = `https://api.tvmaze.com/schedule?date=${fechaHoy}`;
 	await getData({url, metho: displayShowsHoy});
 }
 
@@ -21,7 +21,7 @@ export async function showsFavorites() {
 	let dataUser = await JSON.parse(localStorage.getItem('userData'));
 
 	for (let i = 0; i < dataUser.favorite.length; i++) {
-		let url = `http://api.tvmaze.com/shows/${dataUser.favorite[i]}`;
+		let url = `https://api.tvmaze.com/shows/${dataUser.favorite[i]}`;
 		await getData({url, metho: displayShowsFavorite});
 	}
 }
@@ -30,7 +30,7 @@ export async function showsWatches() {
 	let dataUser = await JSON.parse(localStorage.getItem('userData'));
 
 	for (let i = 0; i < dataUser.watches.length; i++) {
-		let url = `http://api.tvmaze.com/shows/${dataUser.watches[i]}`;
+		let url = `https://api.tvmaze.com/shows/${dataUser.watches[i]}`;
 		await getData({url, metho: displayShowsWatches});
 	}
 }
