@@ -6,7 +6,7 @@ Aplicación web para buscar series y shows, que nos permite hacer seguimiento de
 <ol> 
   <li>
     <h3>Registro del usuario</h3>
-    <p> Ingresar el nombre para ecoger un avatar segun tu nombre, la informacion queda guardada en local storage</p>
+    <p> Ingresar el nombre para escoger un avatar segun tu nombre, la informacion queda guardada en local storage</p>
     <img src="https://user-images.githubusercontent.com/68045913/98445758-72c55000-20e7-11eb-9db9-00ab1b0dc62d.PNG" />
   </li>
     <li>
@@ -38,7 +38,13 @@ Aplicación web para buscar series y shows, que nos permite hacer seguimiento de
     <p>Muestra los shows que has visto, los shows vistos se agregan al local storage</p>
     <img src="https://user-images.githubusercontent.com/68045913/98445804-b15b0a80-20e7-11eb-9fd8-092d4680e938.PNG" />
   </li>
+   <li>
+     <h3>Buscar shows</h3>
+    <p>Si escribimos algo en el buscador, la página nos miuetra los shows cuyo título coincida con nuestra búsqueda.</p>
+    <img src="https://user-images.githubusercontent.com/68045913/98446567-57a90f00-20ec-11eb-994f-5c993a96e3dc.PNG" />
+  </li>
 </ol>
+
 
 <h2>Menciones especiales </h2>
 <p>Aquí expongo mis fuentes de inspiración o recursos que he utilizado en la creación de este proyecto:</p>
